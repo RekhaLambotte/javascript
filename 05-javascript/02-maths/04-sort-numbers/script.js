@@ -21,8 +21,14 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-        
-        
+        let table=document.getElementById("numbers").value;
+        const tablesplit = table.split(",");
+        const array1 = tablesplit;
+        array1.sort(
+            function(a,b){
+                return a-b
+            });
+        alert(tablesplit);
 
 
     });
