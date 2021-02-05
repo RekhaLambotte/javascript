@@ -9,6 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+/*let table=document.getElementById("numbers").value;
+        const tablesplit = table.split(",");
+        var tableNum = parseInt(table,10);
+        console.log(tableNum); */
+
 (function() {
 
     // to get the value of an input: document.getElementById("element-id").value
@@ -16,6 +21,9 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        
+        
+
 
     });
 
