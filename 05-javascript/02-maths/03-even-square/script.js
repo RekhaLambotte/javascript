@@ -4,6 +4,11 @@
  *
  * coded by leny@BeCode
  * started at 26/10/2018
+ * for (n = 1;n < 21;n++) {
+          x=n* n;
+
+          alert("squarre is " + x);
+        } 
  */
 
 // NOTE: don't focus on the existing code structure for now.
@@ -21,11 +26,11 @@
     document.getElementById("run").addEventListener("click", function() {
         // your code here
 
-        for (n = 1;n < 21;n++) {
-          x=n* n;
+        for(i=1;i<21;i++){
+          v=i*i;
 
-          alert("squarre is " + x);
-        } 
+          alert(v);
+        }
 
     });
 

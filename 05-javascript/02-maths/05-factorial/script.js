@@ -13,12 +13,25 @@
     
     // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+    
+
+    document.getElementById("run").addEventListener("click", function () {
 
         // your code here
+        let n= document.getElementById("number").value;
+        let res =1 ;
 
-        
-        
+        if (n==0){
+            console.log("1");
+        }else if (n<0){
+        console.log("erreur")  ;          
+        }else{
+            for (let i = 2; i <= n; i++) {
+                res = res * i;
+              }
+            console.log("factoriel is "+ res);
+        }
     });
 
 })();
+
