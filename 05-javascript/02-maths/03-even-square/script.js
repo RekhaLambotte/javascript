@@ -26,7 +26,7 @@
     document.getElementById("run").addEventListener("click", function() {
         // your code here
 
-        for(i=1;i<21;i++){
+        for(i=2;i<21;i+=2){
           v=i*i;
 
           alert(v);

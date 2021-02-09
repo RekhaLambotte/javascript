@@ -14,5 +14,17 @@
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
+    let d = new Date();
+    let hour= d.getHours();
+    let date = hour +':'+(d.getMinutes());
+    let line= "17:30"
+    console.log(date);
+    console.log(line);
+
+    if (date<line){
+        document.getElementById("target").innerHTML = "Hello, it's " + date;
+    }else{
+        document.getElementById("target").innerHTML = "Good evening, it's " + date;
+    }
 
 })();
