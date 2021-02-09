@@ -13,4 +13,11 @@
 
     // your code here
 
+    // je suis actuelle bloquée à cette exercice. Je vais donc le passer momentanément.
+    
+    document.getElementById("run").addEventListener ("click", function(){
+        let d = document.getElementById("year").value;
+       
+    
+
 })();
