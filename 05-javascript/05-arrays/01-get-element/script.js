@@ -26,6 +26,10 @@
         "cherry",
     ];
 
+    document.getElementById("run").addEventListener( "click", function(){
+        alert(fruits[4])
+    })
+
     // your code here
 
 })();
