@@ -39,4 +39,26 @@
     ]);
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        let x = Math.floor((Math.random()*birds.length))
+        
+        console.log(x)
+
+       /*birds.forEach(function(element,index){
+            
+           let x= element.name;
+           console.log(x)
+           //document.getElementById("target").innerHTML= x;
+           
+        });*/
+        /*for(i<birds.length){
+        let y = birds.random();
+        console.log(y)*/
+
+        
+
+    } )
+
 })();

@@ -23,4 +23,12 @@
     ]);
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        console.log(people.size)
+        if ( people.delete("Alexandre")){
+            console.log(people.size)
+        }
+    })
 })();

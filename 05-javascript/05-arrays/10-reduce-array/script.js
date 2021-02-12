@@ -90,5 +90,17 @@
     ];
 
     // your code here
+    let totAge= [];
+    document.getElementById("run").addEventListener("click", function(){
+
+        people.forEach(function(element,index){
+            
+            totAge.push(element.age);
+            
+        })
+
+        const sum = totAge.reduce((a, b) => a + b, 0);
+        console.log("The total of sum is: " + sum)
+    })
 
 })();

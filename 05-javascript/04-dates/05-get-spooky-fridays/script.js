@@ -18,7 +18,7 @@
     document.getElementById("run").addEventListener ("click", function(){
         let d= new Date ()
         let yearVisitor = document.getElementById("year").value;
-        // let dVisitor= new Date (yearVisitor); en com car pas certain de l'utilisté.
+        // let dVisitor= new Date (yearVisitor); en com car pas certain de l'utilisté
 
         console.log(dVisitor)
        

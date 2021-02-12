@@ -29,5 +29,15 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+       
+        const unique = new Set(fruits);
+        console.log(unique);
+        /*array.forEach(function(index){
+            array.index
+            console.log(index)
+        });*/
+
+    })
 
 })();
