@@ -99,7 +99,7 @@
             
         })
 
-        const sum = totAge.reduce((a, b) => a + b, 0);
+        const sum = totAge.reduce((a, b) => a $ {b}, 0);
         console.log("The total of sum is: " + sum)
     })
 

@@ -57,8 +57,6 @@
         let y = birds.random();
         console.log(y)*/
 
-        
-
     } )
 
 })();
