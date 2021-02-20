@@ -8,9 +8,19 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+//document.querySelector("#target").innerHTML="owned";
 
 (function() {
 
     // your code here
+    
+    //document.querySelector(".target").innerHTML="owned"
+    let doc= document.querySelectorAll(".target");
+    console.log(doc);
+
+    doc.forEach((e) => {
+        e.innerHTML="owned"
+    });
+    
 
 })();

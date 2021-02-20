@@ -27,7 +27,7 @@
             }
 
             static get greeting(){
-                return "Hello";
+                return "Hellouf";
             }
     
         }
@@ -39,16 +39,16 @@
             }
 
             static get greeting(){
-                return "Goedmorning";
+                return "Goedmiaourning";
             }
     
         }
         
         
 
-        let userdog = new dog("pioupiou")
+        let userdog = new dog("the dog")
         console.log(userdog.sayHello());
-        let usercat = new cat("miaoumiaou")
+        let usercat = new cat("the cat")
         console.log(usercat.sayHello());
     })
 })();
