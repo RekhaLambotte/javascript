@@ -96,6 +96,7 @@
             if (people[index].firstname == "Jean" && people[index].lastname == "Dupont")
                 //if (!Array.prototype['forEach'].value)
                 console.log(people[index].email)
+                
         });
     });
 

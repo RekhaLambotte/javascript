@@ -17,16 +17,25 @@
             this.firstname = firstname;
             this.lastname = lastname;
         }
-    } 
+    
 
     get name(){
-        return "[firstname] [lastname]"
+        return "[firstname] [lastname]";
 
     }
-
+    set nameSet(text){
+        let arrName=text.split(" ")
+        this.firstname=arrName[0]
+        this.lastname=arrName[1]
+        
+    }
+    }
     document.getElementById("run").addEventListener("click",    function(){
     var pers= new Person("Juliette","Gilt")
+    var pers2= new Person()
+    pers2.nameSet="Romeo Dupuis";
     console.log(pers)
+    console.log(pers2)
 
     })
 

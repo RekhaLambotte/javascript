@@ -27,8 +27,6 @@
     document.getElementById("run").addEventListener("click", function(){
 
         console.log(people.size)
-        if ( people.delete("Alexandre")){
-            console.log(people.size)
-        }
+        console.log(people.has("Alexandre"))
     })
 })();

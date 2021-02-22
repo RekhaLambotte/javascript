@@ -25,13 +25,11 @@
                 super();
                 this.name= name;
             }
-
             static get greeting(){
                 return "Hellouf";
             }
     
         }
-
         class cat extends Animal {
             constructor(name){
                 super();
@@ -44,11 +42,7 @@
     
         }
         
-        
-
-        let userdog = new dog("the dog")
-        console.log(userdog.sayHello());
-        let usercat = new cat("the cat")
-        console.log(usercat.sayHello());
+        console.log((new dog("the dog")).sayHello());
+        console.log((new cat("the cat")).sayHello());
     })
 })();

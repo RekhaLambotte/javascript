@@ -43,11 +43,22 @@
 (function() {
     // your code here
     
-    document.createAttribute("src").value = document.getElementById("source").getAttribute("data-image");
-    document.getElementById("target").setAttributeNode(document.createAttribute("src"));
+    // document.createAttribute("src").value = document.getElementById("source").getAttribute("data-image");
+    // document.getElementById("target").setAttributeNode(document.createAttribute("src"));
+    // document.getElementById("source").removeAttribute("data-image")
+    // console.log(document.getElementById("source"));
+    // console.log(document.getElementById("target"));
+
+    let target = document.getElementById("target");
+    let x = document.createAttribute("img");
+    let source = document.getElementById("source");
+    let y = source.getAttribute("data-image");
+    x.value = y;
+    target.setAttributeNode(x);
     document.getElementById("source").removeAttribute("data-image")
-    console.log(document.getElementById("source"));
-    console.log(document.getElementById("target"));
+    console.log(target, source);
+    
+    
     
     
 })();

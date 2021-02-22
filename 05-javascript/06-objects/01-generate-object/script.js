@@ -23,7 +23,7 @@
         
         console.log(people);
         console.log(Object.keys(people));
-        console.log(Object.values(people));
+        console.log(people.lastname +" "+ people.firstname +" "+ people.age);
 
     })
 })();

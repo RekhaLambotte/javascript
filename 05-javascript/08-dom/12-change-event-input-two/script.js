@@ -12,5 +12,12 @@
 (function() {
 
     // your code here
+    let x = document.getElementById("pass-one");
+    let y = document.getElementById("counter");
+    document.getElementById("pass-one").addEventListener("keyup", function(){
 
+        if(x.length> 8 && )
+        y.innerHTML= `${x.value.length} /10`
+        x.value=x.value.substring(0,9);
+    })
 })();
