@@ -4,6 +4,17 @@
  *
  * coded by leny@BeCode
  * started at 09/05/2019
+ * 
+ * document.querySelector("#run").addEventListener("click", function(){
+        window.lib.getPosts((error,array) => {
+            if(error){
+                console.log(error);
+            }else{
+                console.log(array);
+            }
+        })
+    })
+ * 
  */
 
 // NOTE: don't focus on the existing code structure for now.
@@ -11,4 +22,14 @@
 
 (() => {
     // your code here
+    function calB (error,array) {
+        if(error){
+            console.log(error);
+        }else{
+            console.log(array);
+        }
+
+    document.querySelector("#run").addEventListener("click", function(){
+        window.lib.getComments()
+    })
 })();

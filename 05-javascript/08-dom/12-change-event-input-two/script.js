@@ -9,6 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+// regex pour controler si les 2 chiffres sont dans le input
+
 (function() {
 
     // your code here
