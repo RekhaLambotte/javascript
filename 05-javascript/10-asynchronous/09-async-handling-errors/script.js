@@ -9,6 +9,23 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+// async function promise(){  
+//     let prom = await window.lib.getPosts()
+//     console.log(prom)
+// }
+
+// document.querySelector("#run").addEventListener("click",function(){
+//     promise()
+// })
+
+
+
 (() => {
     // your code here
+    async function one(){
+        let prom = await window.lib.getPersons()
+        console.log(prom)
+    }
+    
+    document.
 })();

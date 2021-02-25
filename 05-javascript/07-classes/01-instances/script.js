@@ -22,6 +22,8 @@
         let cat2 = new Cat("Pixel", "6 years");
 
         console.log(cat1, cat2)
+
+        async()
     })
     
 })();

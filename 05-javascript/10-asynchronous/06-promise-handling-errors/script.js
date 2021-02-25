@@ -12,7 +12,7 @@
 (() => {
     // your code here
     document.querySelector("#run").addEventListener("click", function(){
-         window.lib.getPersons()
+         let prom = window.lib.getPersons()
           
           .then((value) => {
             console.log(value);

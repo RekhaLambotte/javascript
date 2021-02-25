@@ -22,35 +22,30 @@
 
 (() => {
     // your code here
-
-    // document.querySelector("#run").addEventListener("click", function(){
-    //     window.lib.getPosts((error,array) => {
-    //         if(error){
-    //             console.log(error);
-    //         }else{
-    //             console.log(array);
-    //         }
-    //     })
-        
-    // })
-
-    // document.querySelector("run").addEventListener("click", function(){
-    //     window.lib.getComments()
-    // })
-    
-    function post(error,array){
-        console.log(error);
-        console.log(array);
-    }
-
-    function com(error,comments){
-        console.log(error)
-        console.log(array)
-    }
  
      document.querySelector("#run").addEventListener("click", function(){
-         window.lib.getPosts(post)
-         window.lib.getComments(com)
-     })
+        window.lib.getPosts((error,allpost) => {
+
+            if(error){
+                console.error(error)
+            }else{
+                allpost.forEach(post => {
+                    window.lib.getComments( post.id,(error,comment)=>{
+                       post.comment=comment
+                       if(error){
+                           console.error(error)
+                       }
+
+                    })
+                    console.log(post.id)
+                    console.log(allpost);
+                });
+                
+                
+            }
+            })
+        })
+                
+    
     
 })();
