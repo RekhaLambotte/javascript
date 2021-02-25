@@ -29,22 +29,34 @@
         })
  */
 
+// document.querySelector("#run").addEventListener("click", function(){
+//     window.lib.getPosts(function (error,array) {
+//         if(error){
+//             console.log(error);
+//         }else{
+//             console.log(array);
+//         }
+//     })
+// })
+
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
 (() => {
     // your code here
-    
-    
+
+
 
     document.querySelector("#run").addEventListener("click", function(){
-        window.lib.getPosts((error,array) => {
-            if(error){
-                console.log(error);
-            }else{
-                console.log(array);
+        window.lib.getPosts(
+            function (error,array){
+                if(error){
+                    console.log(error)
+                }else{
+                    console.log(array)
+                }
             }
-        })
+        )
     })
 
 })();

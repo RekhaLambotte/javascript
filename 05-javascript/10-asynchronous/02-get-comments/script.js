@@ -22,14 +22,35 @@
 
 (() => {
     // your code here
-    function calB (error,array) {
-        if(error){
-            console.log(error);
-        }else{
-            console.log(array);
-        }
 
-    document.querySelector("#run").addEventListener("click", function(){
-        window.lib.getComments()
-    })
+    // document.querySelector("#run").addEventListener("click", function(){
+    //     window.lib.getPosts((error,array) => {
+    //         if(error){
+    //             console.log(error);
+    //         }else{
+    //             console.log(array);
+    //         }
+    //     })
+        
+    // })
+
+    // document.querySelector("run").addEventListener("click", function(){
+    //     window.lib.getComments()
+    // })
+    
+    function post(error,array){
+        console.log(error);
+        console.log(array);
+    }
+
+    function com(error,comments){
+        console.log(error)
+        console.log(array)
+    }
+ 
+     document.querySelector("#run").addEventListener("click", function(){
+         window.lib.getPosts(post)
+         window.lib.getComments(com)
+     })
+    
 })();
