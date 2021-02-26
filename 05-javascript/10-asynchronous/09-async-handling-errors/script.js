@@ -23,9 +23,15 @@
 (() => {
     // your code here
     async function one(){
-        let prom = await window.lib.getPersons()
-        console.log(prom)
+        try{
+            let prom = await window.lib.getPersons()
+            console.log(prom)
+        }catch(error){
+            console.error(error)
+        }    
     }
     
-    document.
+    document.querySelector("#run").addEventListener("click",function(){
+        one()
+    })
 })();
