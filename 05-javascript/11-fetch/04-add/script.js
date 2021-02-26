@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+    
+     
+    async function fet(){
+        const response = await fetch("http://localhost:3000/heroes/")
+        let rep = await response.json()
+        
+        console.log(rep)   
+    }
+
+    document.querySelector("#run").addEventListener("click", function(){
+        fet()  
+    })
 })();

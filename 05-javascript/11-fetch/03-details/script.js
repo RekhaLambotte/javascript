@@ -11,4 +11,29 @@
 
 (() => {
     // your code here
+    const targetDoc = document.querySelector("#target");
+    const template = document.querySelector("#tpl-hero").content;
+     
+    async function fet(){
+        const response = await fetch("http://localhost:3000/heroes/")
+        let rep = await response.json()
+        
+        for(i=0;i<rep.length;i++){
+            const copyTemp = document.importNode(template,true)
+            let egal= rep[i].id
+            const heroInput = document.querySelector("#hero-id").value
+
+            if(heroInput==egal){
+                copyTemp.querySelector(".name").innerHTML = rep[i].name
+                copyTemp.querySelector(".alter-ego").innerHTML =    rep[i].alterEgo
+                copyTemp.querySelector(".powers").innerHTML = rep   [i].abilities
+
+            targetDoc.appendChild(copyTemp)
+            }   
+        }   
+    }
+
+    document.querySelector("#run").addEventListener("click", function(){
+        fet()  
+    })
 })();
