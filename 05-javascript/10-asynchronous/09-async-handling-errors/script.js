@@ -28,6 +28,9 @@
             console.log(prom)
         }catch(error){
             console.error(error)
+        }
+        finally{
+            console.error("hello")
         }    
     }
     

@@ -29,7 +29,10 @@
                 copyTemp.querySelector(".powers").innerHTML = rep   [i].abilities
 
             targetDoc.appendChild(copyTemp)
-            }   
+                
+                console.log("ok")
+            } 
+            console.log("egal)  
         }   
     }
 

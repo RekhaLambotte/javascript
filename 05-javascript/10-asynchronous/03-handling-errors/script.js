@@ -19,6 +19,7 @@
             
             if(error){
                 console.error(error)
+                return; // arret l'exécution , comme un break
             }else{
                 console.log(array)
             }
